@@ -24,7 +24,8 @@ jobs:
     - name: Inicia banco
       run: docker compose up -d postgres
     - name: Aguarda o banco de dados inicializar
-      run: sleep 10
+      run: sleep 5
+           docker ps
     
     - name: Lint
       uses: golangci/golangci-lint-action@v9
